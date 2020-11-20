@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shudon/sy/sy",
+    "pages/shudon/edit/edit",
+    "pages/shudon/look/look"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#81c2e0",
+    "navigationBarTitleText": "Antidote",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#0077FF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/1.png"
+    },
+    {
+      "pagePath": "pages/shudon/sy/sy",
+      "text": "树洞星球",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/1.png"
+    }] 
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
