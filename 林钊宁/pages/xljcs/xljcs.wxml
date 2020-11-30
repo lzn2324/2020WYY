@@ -1,0 +1,21 @@
+<!--pages/xljcs/xljcs.wxml-->
+<view class = "container">
+<view class="answer"> 
+  <view class="number" style="border:2px  rgb(114, 183, 248) solid">
+  <text>{{idx+1}}/{{list.length}}</text>
+  </view>
+  <view class="title-vi">
+  <view class="title-name">{{list[idx].name}}</view>
+  <view class="{{idz == index ? 'title-select' : 'select-title'}}" wx:for='{{list[idx].select_title}}' bindtap="selectTitle" data-index='{{index}}'>{{item}}</view>
+</view>
+</view>
+
+<view class="select-sure">
+  <view wx:if='{{idx == 0}}' class="top-sure1">上一题</view>
+  <view wx:else class="top-sure" bindtap="jumpBackTitle">上一题</view>
+  <view wx:if='{{idx == list.length - 1}}' class="bottom-sure1" bindtap="jumpjieguo">提交</view>
+  <view wx:else class="bottom-sure" bindtap="jumpNavTitle">下一题</view>
+</view>
+
+
+</view>
